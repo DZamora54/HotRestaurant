@@ -34,12 +34,12 @@ app.get("/reserve", function(req, res) {
   res.sendFile(path.join(__dirname, "reserve.html"));
 });
 app.get("/tables", function(req, res) {
-  res.json(reservations);
+  res.sendFile(path.join(__dirname, "tables.html"));
 });
 
-// Search existing reservations
+// Get existing reservations
 app.get("/api/:reservations?", function(req, res) {
-  var chosen = req.params.reservations;
+  //var chosen = req.params.reservations;
   if (chosen) {
   	console.log(chosen);
   	for (var i = 0; i < reservations.length; i++) {

@@ -1,0 +1,14 @@
+.container{
+  background-color: #BCC2C4;
+  margin-top: 15px;
+  width: 800px;
+  padding-bottom: 15px;
+}
+.btn1{
+  background-color: #CC3333;
+  color: white;
+}
+.btn2{
+  background-color: #3399CC;
+  color: white;
+}

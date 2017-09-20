@@ -19,6 +19,13 @@ var reservations = [{
   uniqueId: "",
 }];
 
+var waitinglist = [{
+  name: "",
+  phoneNumber: "",
+  email: "",
+  uniqueId: "",
+}];
+
 //Routes
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "home.html"));
@@ -52,6 +59,12 @@ app.post("/api/new", function(req, res) {
   console.log(newreservation);
   reservations.push(newreservation);
   res.json(newreservation);
+});
+
+// Clears all reservations
+app.post("/api/new", function(req, res) {
+  console.log(reservations);
+  res.json
 });
 
 // Starts the server to begin listening

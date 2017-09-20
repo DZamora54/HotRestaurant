@@ -13,10 +13,10 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
 var reservations = [{
-  name: "",
+  customerName: "",
   phoneNumber: "",
-  email: "",
-  uniqueId: "",
+  customerEmail: "",
+  customerID: "",
 }];
 
 var waitinglist = [{
@@ -62,10 +62,10 @@ app.post("/api/new", function(req, res) {
 });
 
 // Clears all reservations
-app.post("/api/new", function(req, res) {
-  console.log(reservations);
-  res.json
-});
+// app.post("/api/new", function(req, res) {
+//   console.log(reservations);
+//   res.json
+// });
 
 // Starts the server to begin listening
 // =============================================================
